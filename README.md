@@ -68,3 +68,9 @@ When encountering double negatives (`--`), the first `-` is treated as a subtrac
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request with your changes.
+
+## Video
+
+In this video I try some expressions to test the code
+click [here](https://drive.google.com/file/d/1F_NumbW5BTpSiagNDLwEN1mYkwiZUKQh/view?usp=drive_link)
+
