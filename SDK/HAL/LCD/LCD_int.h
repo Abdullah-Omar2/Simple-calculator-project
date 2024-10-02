@@ -20,12 +20,14 @@ ES_T LCD_enumSendString(u8* Copy_pu8String);
 
 ES_T LCD_enumGoTOPosition(u8 Copy_u8Row,u8 Copy_u8Col);
 
-ES_T LCD_enumDisplayIntNum(s64 Copy_s64Num);
+ES_T LCD_enumDisplayIntNum(s32 Copy_s32Num);
 
 ES_T LCD_enumDisplayFloatNum(f32 Copy_u8Num);
 
 ES_T LCD_enumSendCustomChar(u8 Copy_u8Pos,u8* Copy_pu8Char);
 
 ES_T LCD_enumClear(void);
+
+ES_T LCD_enumCursorEnable(void);
 
 #endif /* INCLUDE_HAL_LCD_LCD_INT_H_ */

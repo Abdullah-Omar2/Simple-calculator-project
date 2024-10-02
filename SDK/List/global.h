@@ -3,11 +3,7 @@
 
 #include "../LIB/STDtypes.h"
 
-typedef union
-{
-	u8 OP;
-	s32 Term;
-}elementtype;
+typedef f32 elementtype;
 
 #define MAXELEMENT 10
 

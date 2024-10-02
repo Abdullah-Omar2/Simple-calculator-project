@@ -62,7 +62,7 @@ ES_T LCD_enumInit(void)
 
     _delay_ms(1);
 
-    Local_enumErrorState=LCD_inlenumSendCommand(0x0D);
+    Local_enumErrorState=LCD_inlenumSendCommand(0x0C);
     if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
 
     _delay_ms(1);
@@ -322,40 +322,40 @@ ES_T LCD_enumGoTOPosition(u8 Copy_u8Row,u8 Copy_u8Col)
 	return Local_enumErrorState;
 }
 
-ES_T LCD_enumDisplayIntNum(s64 Copy_s64Num)
+ES_T LCD_enumDisplayIntNum(s32 Copy_s32Num)
 {
 	ES_T Local_enumErrorState=ES_NOK;
 
-	Local_enumErrorState=LCD_inlenumDisplayIntNum(Copy_s64Num);
+	Local_enumErrorState=LCD_inlenumDisplayIntNum(Copy_s32Num);
 
 	return Local_enumErrorState;
 }
 
-static inline ES_T LCD_inlenumDisplayIntNum(s32 Copy_s64Num)
+static inline ES_T LCD_inlenumDisplayIntNum(s32 Copy_s32Num)
 {
 	ES_T Local_enumErrorState=ES_NOK;
 
-	if(Copy_s64Num < 0)
+	if(Copy_s32Num < 0)
 	{
 		Local_enumErrorState=LCD_inlenumSendChar('-');
 		if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
-		Copy_s64Num *= -1;
+		Copy_s32Num *= -1;
 	}
 
 	u8 Local_Au8Buffer[10];
 	u8 Local_u8Index = 0;
 
-	if(Copy_s64Num == 0)
+	if(Copy_s32Num == 0)
 	{
 		Local_enumErrorState=LCD_inlenumSendChar('0');
 		if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
 	}
 	else
 	{
-		while(Copy_s64Num > 0)
+		while(Copy_s32Num > 0)
 		{
-			Local_Au8Buffer[Local_u8Index++] = (Copy_s64Num % 10) + '0';
-			Copy_s64Num /= 10;
+			Local_Au8Buffer[Local_u8Index++] = (Copy_s32Num % 10) + '0';
+			Copy_s32Num /= 10;
 		}
 
 		while(Local_u8Index > 0)
@@ -385,11 +385,22 @@ ES_T LCD_enumDisplayFloatNum(f32 Copy_f32Num)
 
 	Local_enumErrorState=LCD_inlenumDisplayIntNum(Local_u16Left);
 	if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
-	Local_enumErrorState=LCD_inlenumSendChar('.');
-	if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
 
-	f32 Local_f32Fraction=Copy_f32Num-(f32)Local_u16Left+.00005;
-	for (int i=0;i<4;i++)
+	f32 Local_f32Fraction=Copy_f32Num-(f32)Local_u16Left;
+
+	if(Local_f32Fraction==0)
+	{
+		return Local_enumErrorState;
+	}
+	else
+	{
+		Local_enumErrorState=LCD_inlenumSendChar('.');
+		if(Local_enumErrorState!=ES_OK)return Local_enumErrorState;
+
+		Local_f32Fraction+=.00005;
+	}
+
+	for (u8 i=0;i<4;i++)
 	{
 		Local_f32Fraction *= 10;
 		u8 Local_u8Digit = (u8)Local_f32Fraction;
@@ -442,6 +453,15 @@ ES_T LCD_enumClear(void)
 	ES_T Local_enumErrorState=ES_NOK;
 
 	Local_enumErrorState=LCD_inlenumSendCommand(0x01);
+
+	return Local_enumErrorState;
+}
+
+ES_T LCD_enumCursorEnable(void)
+{
+	ES_T Local_enumErrorState=ES_NOK;
+
+	Local_enumErrorState=LCD_inlenumSendCommand(0x0D);
 
 	return Local_enumErrorState;
 }
