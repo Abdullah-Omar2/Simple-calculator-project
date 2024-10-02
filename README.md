@@ -7,5 +7,5 @@ it can calculate float results and handle negative numbers
 it can also save the result if user want to use it.
 
 ## Video
-Here is a video that show some expressions on my calculator
+Here is a video that show some expressions on my calculator.
 click [here](https://drive.google.com/file/d/1F_NumbW5BTpSiagNDLwEN1mYkwiZUKQh/view?usp=drive_link).
