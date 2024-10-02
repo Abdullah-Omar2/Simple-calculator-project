@@ -1,7 +1,7 @@
 Archive member included because of file (symbol)
 
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                              ./APP/main.o (__mulsi3)
+                              ./APP/Calculator_prog.o (__mulsi3)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
                               ./HAL/LCD/LCD_prog.o (__divmodsi4)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -17,7 +17,7 @@ c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
                               ./HAL/LCD/LCD_prog.o (__mulsf3)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
-                              ./APP/main.o (__divsf3)
+                              ./APP/Calculator_prog.o (__divsf3)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
                               ./HAL/LCD/LCD_prog.o (__eqsf2)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
@@ -27,11 +27,11 @@ c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
                               ./HAL/LCD/LCD_prog.o (__ltsf2)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
-                              ./APP/main.o (__lesf2)
+                              ./APP/Calculator_prog.o (__lesf2)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
                               ./HAL/LCD/LCD_prog.o (__floatsisf)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
-                              ./APP/main.o (__fixsfsi)
+                              ./APP/Calculator_prog.o (__fixsfsi)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
                               c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__thenan_sf)
 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
@@ -58,11 +58,9 @@ c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/
 Allocating common symbols
 Common symbol       size              file
 
-Local_u8PressedKey  0x1               ./APP/main.o
 __brkval            0x2               c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
 Calculator_listTerms
                     0x2               ./APP/main.o
-Calculator_Au8Nums  0xf               ./APP/main.o
 __flp               0x2               c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
 Calculator_listOPs  0x2               ./APP/main.o
 
@@ -180,7 +178,7 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x46ec
+.text           0x00000000     0x478e
  *(.vectors)
  .vectors       0x00000000       0x54 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -424,30 +422,36 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
  .text.KEYPAD_enumGetPressedKey
                 0x0000347e      0x17a ./HAL/KEYPAD/KEYPAD_prog.o
                 0x0000347e                KEYPAD_enumGetPressedKey
- .text.main     0x000035f8      0xdc0 ./APP/main.o
-                0x000035f8                main
- .text.libgcc   0x000043b8       0x3e c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x000043b8                __mulsi3
- .text.libgcc   0x000043f6       0x36 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
-                0x000043f6                __divmodsi4
- .text.libgcc   0x0000442c        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x0000442c        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x0000442c        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000442c       0x44 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000442c                __udivmodsi4
- .text.libgcc   0x00004470       0x38 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00004470                __prologue_saves__
- .text.libgcc   0x000044a8       0x36 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x000044a8                __epilogue_restores__
+ .text.Calculator_voidStart
+                0x000035f8      0x138 ./APP/Calculator_prog.o
+                0x000035f8                Calculator_voidStart
+ .text.Calculator_voidRun
+                0x00003730      0xcee ./APP/Calculator_prog.o
+                0x00003730                Calculator_voidRun
+ .text.main     0x0000441e       0x3c ./APP/main.o
+                0x0000441e                main
+ .text.libgcc   0x0000445a       0x3e c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x0000445a                __mulsi3
+ .text.libgcc   0x00004498       0x36 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00004498                __divmodsi4
+ .text.libgcc   0x000044ce        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000044ce        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000044ce        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000044ce       0x44 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000044ce                __udivmodsi4
+ .text.libgcc   0x00004512       0x38 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00004512                __prologue_saves__
+ .text.libgcc   0x0000454a       0x36 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x0000454a                __epilogue_restores__
  .text.avr-libc
-                0x000044de      0x20a c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000044de                malloc
-                0x00004638                free
-                0x000046e8                . = ALIGN (0x2)
+                0x00004580      0x20a c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00004580                malloc
+                0x000046da                free
+                0x0000478a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000046e8        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000046e8                exit
-                0x000046e8                _exit
+ .fini9         0x0000478a        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000478a                exit
+                0x0000478a                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -466,11 +470,11 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000046e8        0x4 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000478a        0x4 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000046ec                _etext = .
+                0x0000478e                _etext = .
 
-.data           0x00800060      0x164 load address 0x000046ec
+.data           0x00800060      0x160 load address 0x0000478e
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -478,8 +482,8 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
  .data          0x00800060        0x0 ./List/list.o
  .data          0x00800060        0x0 ./HAL/LCD/LCD_prog.o
  .data          0x00800060        0x0 ./HAL/KEYPAD/KEYPAD_prog.o
- .data          0x00800060        0x0 ./APP/Calculator_prog.o
- .data          0x00800060       0x32 ./APP/main.o
+ .data          0x00800060       0x32 ./APP/Calculator_prog.o
+ .data          0x00800092        0x0 ./APP/main.o
  .data          0x00800092        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
  .data          0x00800092        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
  .data          0x00800092        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -523,85 +527,68 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
                 0x008001b8        0x4 ./HAL/KEYPAD/KEYPAD_prog.o
  .data.Local_Au8ColPorts.1291
                 0x008001bc        0x4 ./HAL/KEYPAD/KEYPAD_prog.o
- .data.Calculator_s32IsNeg
-                0x008001c0        0x4 ./APP/main.o
-                0x008001c0                Calculator_s32IsNeg
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x008001c4                . = ALIGN (0x2)
-                0x008001c4                _edata = .
-                0x008001c4                PROVIDE (__data_end, .)
+                0x008001c0                . = ALIGN (0x2)
+                0x008001c0                _edata = .
+                0x008001c0                PROVIDE (__data_end, .)
 
-.bss            0x008001c4       0x1c
-                0x008001c4                PROVIDE (__bss_start, .)
+.bss            0x008001c0        0x8
+                0x008001c0                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x008001c4        0x0 ./MCAL/DIO/DIO_prog.o
- .bss           0x008001c4        0x0 ./List/list.o
- .bss           0x008001c4        0x0 ./HAL/LCD/LCD_prog.o
- .bss           0x008001c4        0x0 ./HAL/KEYPAD/KEYPAD_prog.o
- .bss           0x008001c4        0x0 ./APP/Calculator_prog.o
- .bss           0x008001c4        0x0 ./APP/main.o
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
- .bss           0x008001c4        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008001c0        0x0 ./MCAL/DIO/DIO_prog.o
+ .bss           0x008001c0        0x0 ./List/list.o
+ .bss           0x008001c0        0x0 ./HAL/LCD/LCD_prog.o
+ .bss           0x008001c0        0x0 ./HAL/KEYPAD/KEYPAD_prog.o
+ .bss           0x008001c0        0x0 ./APP/Calculator_prog.o
+ .bss           0x008001c0        0x0 ./APP/main.o
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x008001c0        0x0 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
  *(.bss*)
- .bss.Calculator_u8Counter1
-                0x008001c4        0x1 ./APP/main.o
-                0x008001c4                Calculator_u8Counter1
- .bss.Calculator_u8Counter2
-                0x008001c5        0x1 ./APP/main.o
-                0x008001c5                Calculator_u8Counter2
- .bss.Calculator_u8Counter3
-                0x008001c6        0x1 ./APP/main.o
-                0x008001c6                Calculator_u8Counter3
- .bss.Calculator_u8Counter4
-                0x008001c7        0x1 ./APP/main.o
-                0x008001c7                Calculator_u8Counter4
  *(COMMON)
- COMMON         0x008001c8       0x14 ./APP/main.o
-                0x008001c8                Local_u8PressedKey
-                0x008001c9                Calculator_listTerms
-                0x008001cb                Calculator_Au8Nums
-                0x008001da                Calculator_listOPs
- COMMON         0x008001dc        0x4 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008001dc                __brkval
-                0x008001de                __flp
-                0x008001e0                PROVIDE (__bss_end, .)
-                0x000046ec                __data_load_start = LOADADDR (.data)
-                0x00004850                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008001c0        0x4 ./APP/main.o
+                0x008001c0                Calculator_listTerms
+                0x008001c2                Calculator_listOPs
+ COMMON         0x008001c4        0x4 c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008001c4                __brkval
+                0x008001c6                __flp
+                0x008001c8                PROVIDE (__bss_end, .)
+                0x0000478e                __data_load_start = LOADADDR (.data)
+                0x000048ee                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001e0        0x0
-                0x008001e0                PROVIDE (__noinit_start, .)
+.noinit         0x008001c8        0x0
+                0x008001c8                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008001e0                PROVIDE (__noinit_end, .)
-                0x008001e0                _end = .
-                0x008001e0                PROVIDE (__heap_start, .)
+                0x008001c8                PROVIDE (__noinit_end, .)
+                0x008001c8                _end = .
+                0x008001c8                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -619,7 +606,7 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x3e40
+.stab           0x00000000     0x3f30
  *(.stab)
  .stab          0x00000000      0xd5c ./MCAL/DIO/DIO_prog.o
  .stab          0x00000d5c      0x7f8 ./List/list.o
@@ -628,14 +615,14 @@ LOAD c:/users/abdullahalazhary/starks/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4
                                0x16a4 (size before relaxing)
  .stab          0x00002a6c      0x54c ./HAL/KEYPAD/KEYPAD_prog.o
                                 0x558 (size before relaxing)
- .stab          0x00002fb8      0x1b0 ./APP/Calculator_prog.o
-                                0x348 (size before relaxing)
- .stab          0x00003168      0xcd8 ./APP/main.o
-                                0xf0c (size before relaxing)
+ .stab          0x00002fb8      0xdd4 ./APP/Calculator_prog.o
+                                0xf6c (size before relaxing)
+ .stab          0x00003d8c      0x1a4 ./APP/main.o
+                                0x414 (size before relaxing)
 
-.stabstr        0x00000000     0x1a44
+.stabstr        0x00000000     0x1ab1
  *(.stabstr)
- .stabstr       0x00000000     0x1a44 ./MCAL/DIO/DIO_prog.o
+ .stabstr       0x00000000     0x1ab1 ./MCAL/DIO/DIO_prog.o
 
 .stab.excl
  *(.stab.excl)
